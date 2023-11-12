@@ -1,6 +1,6 @@
 #include "animal.h"
 
-Animal::Animal() : name_("DefaultAnimal"), age_(0), color_("Transparent") {}
+Animal::Animal() : name_("DefaultAnimal"), age_(10), color_("Peach") {}
 
 void Animal::animalMove() {
     std::cout << "Animal is moving!\n";
