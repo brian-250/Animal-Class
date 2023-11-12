@@ -2,7 +2,7 @@
 
 Dog::Dog() : name_("DefaultDog"), age_(0), color_("Transparent") {}
 
-void Dog::move() {
+void Dog::dogMove() {
     std::cout << "Dog is moving!\n";
 }
 
