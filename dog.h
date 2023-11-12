@@ -1,3 +1,6 @@
+#ifndef DOG_H
+#define DOG_H
+
 #include "animal.h"
 
 class Dog : public Animal {
@@ -10,3 +13,5 @@ class Dog : public Animal {
     int age_;
     std::string color_;
 };
+
+#endif

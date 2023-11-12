@@ -8,6 +8,7 @@ class Animal {
   Animal();
   void move();
   void printAttributes();
+  
  private:
   std::string name_;
   int age_;
