@@ -1,6 +1,6 @@
 #include "dog.h"
 
-Dog::Dog() : name_("DefaultDog"), age_(0), color_("Transparent") {}
+Dog::Dog() : name_("DefaultDog"), age_(20), color_("Red") {}
 
 void Dog::dogMove() {
     std::cout << "Dog is moving!\n";
