@@ -1,7 +1,6 @@
 class Heart {
  public:
-    bool heartBeat();
-    void setHeartBeat(bool heart_beat);
+   Heart();
  private:
     bool heart_beat_;
 };
