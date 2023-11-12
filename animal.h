@@ -6,9 +6,9 @@
 class Animal {
  public:
   Animal();
-  void move();
+  void animalMove();
   void printAttributes();
-  
+
  private:
   std::string name_;
   int age_;
