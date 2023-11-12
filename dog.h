@@ -2,6 +2,7 @@
 
 class Dog : public Animal {
  public:
+    Dog();
     void move();
     void printAttributes();
  private:
