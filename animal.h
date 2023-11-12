@@ -1,3 +1,6 @@
+#ifndef ANIMAL_H
+#define ANIMAL_H
+
 #include <iostream>
 
 class Animal {
@@ -10,3 +13,5 @@ class Animal {
   int age_;
   std::string color_;
 };
+
+#endif
