@@ -1,6 +1,6 @@
 #include "dog.h"
 
-Dog::Dog() : name_("DefaultDog"), age_(20), color_("Red") {}
+Dog::Dog() : name_("DefaultDog"), age_(20), color_("Red"), heart_(std::make_shared<Heart>()) {}
 
 void Dog::isDogAwake() {
     if (this->heart_->heartBeat() == true) {
