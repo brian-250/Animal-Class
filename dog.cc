@@ -10,6 +10,15 @@ void Dog::isDogAwake() {
     }
 }
 
+void Dog::wakeUpDog() {
+    this->heart_->setHeartBeat(true);
+    if (this->heart_->heartBeat() == true) {
+        std::cout << "Dogg is awake\n";
+    } else if (this->heart_->heartBeat() == false) {
+        std::cout << "Dog is sleeping\n";
+    }
+}
+
 void Dog::dogMove() {
     std::cout << "Dog is moving!\n";
 }
