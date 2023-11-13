@@ -6,6 +6,9 @@
 class Dog : public Animal {
  public:
     Dog();
+    void isDogAwake();
+    void wakeUpDog();
+    void sleepDog();
     void dogMove();
     void printAttributes();
  private:
