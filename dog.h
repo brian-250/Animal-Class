@@ -15,6 +15,7 @@ class Dog : public Animal {
     std::string name_;
     int age_;
     std::string color_;
+    std::shared_ptr<Heart> heart_;
 };
 
 #endif
