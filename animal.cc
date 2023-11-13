@@ -1,6 +1,15 @@
 #include "animal.h"
+#include "heart.h"
 
 Animal::Animal() : name_("DefaultAnimal"), age_(10), color_("Peach") {}
+
+void Animal::isAnimalAwake() {
+    if (this->heart_->heartBeat() == true) {
+        std::cout << "Animal is awake\n";
+    } else if (this->heart_->heartBeat() == false) {
+        std::cout << "Animal is sleeping\n";
+    }
+}
 
 void Animal::animalMove() {
     std::cout << "Animal is moving!\n";
