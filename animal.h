@@ -1,6 +1,8 @@
 #ifndef ANIMAL_H
 #define ANIMAL_H
 
+#include "heart.h"
+
 #include <iostream>
 
 class Animal {
@@ -16,6 +18,7 @@ class Animal {
   std::string name_;
   int age_;
   std::string color_;
+  std::shared_ptr<Heart> heart_;
 };
 
 #endif
