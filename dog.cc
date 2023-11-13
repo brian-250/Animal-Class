@@ -2,6 +2,14 @@
 
 Dog::Dog() : name_("DefaultDog"), age_(20), color_("Red") {}
 
+void Dog::isDogAwake() {
+    if (this->heart_->heartBeat() == true) {
+        std::cout << "Dog is awake\n";
+    } else if (this->heart_->heartBeat() == false) {
+        std::cout << "Dog is sleeping\n";
+    }
+}
+
 void Dog::dogMove() {
     std::cout << "Dog is moving!\n";
 }
