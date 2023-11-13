@@ -1,7 +1,7 @@
 #include "animal.h"
 #include "heart.h"
 
-Animal::Animal() : name_("DefaultAnimal"), age_(10), color_("Peach") {}
+Animal::Animal() : name_("DefaultAnimal"), age_(10), color_("Peach"), heart_(std::make_shared<Heart>(false)) {}
 
 void Animal::isAnimalAwake() {
     if (this->heart_->heartBeat() == true) {
