@@ -20,6 +20,15 @@ void Animal::wakeUpAnimal() {
     }
 }
 
+void Animal::sleepAnimal() {
+    this->heart_->setHeartBeat(false);
+    if (this->heart_->heartBeat() == true) {
+        std::cout << "Animal is awake\n";
+    } else if (this->heart_->heartBeat() == false) {
+        std::cout << "Animal is sleeping\n";
+    }
+}
+
 void Animal::animalMove() {
     std::cout << "Animal is moving!\n";
 }
