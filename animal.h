@@ -6,6 +6,9 @@
 class Animal {
  public:
   Animal();
+  void isAnimalAwake();
+  void wakeUpAnimal();
+  void sleepAnimal();
   void animalMove();
   void printAttributes();
 
