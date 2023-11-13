@@ -13,7 +13,16 @@ void Dog::isDogAwake() {
 void Dog::wakeUpDog() {
     this->heart_->setHeartBeat(true);
     if (this->heart_->heartBeat() == true) {
-        std::cout << "Dogg is awake\n";
+        std::cout << "Dog is awake\n";
+    } else if (this->heart_->heartBeat() == false) {
+        std::cout << "Dog is sleeping\n";
+    }
+}
+
+void Dog::sleepDog() {
+    this->heart_->setHeartBeat(false);
+    if (this->heart_->heartBeat() == true) {
+        std::cout << "Dog is awake\n";
     } else if (this->heart_->heartBeat() == false) {
         std::cout << "Dog is sleeping\n";
     }
