@@ -47,5 +47,7 @@ Animal& Animal::operator=(const Animal& other) {
     this->age_ = other.age_;
     this->color_ = other.color_;
     this->heart_->setHeartBeat(other.heart_->heartBeat());
+
+    return *this;
     }
 }
