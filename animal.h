@@ -13,6 +13,7 @@ class Animal {
   void sleepAnimal();
   void animalMove();
   void printAttributes();
+  Animal& operator=(const Animal& other);
 
  private:
   std::string name_;
