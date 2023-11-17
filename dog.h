@@ -11,6 +11,7 @@ class Dog : public Animal {
     void sleepDog();
     void dogMove();
     void printAttributes();
+    
  private:
     std::string name_;
     int age_;

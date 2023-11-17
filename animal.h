@@ -8,6 +8,7 @@
 class Animal {
  public:
   Animal();
+  Animal(const std::string& name, int age, const std::string& color, std::shared_ptr<Heart> heart);
   void isAnimalAwake();
   void wakeUpAnimal();
   void sleepAnimal();
