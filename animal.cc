@@ -36,7 +36,7 @@ void Animal::animalMove() {
 }
 
 void Animal::printAttributes() {
-    std::cout << "My name is " << this->name_ << '\n';
+    std::cout << "My Animal name is " << this->name_ << '\n';
     std::cout << "My age is " << this->age_ << '\n';
     std::cout << "My color is " << this->color_ << '\n';
 }
