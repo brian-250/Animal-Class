@@ -2,6 +2,8 @@
 
 Dog::Dog() : name_("DefaultDog"), age_(20), color_("Red"), heart_(std::make_shared<Heart>()) {}
 
+Dog::Dog(const std::string& name, int age, const std::string& color, std::shared_ptr<Heart> heart) : name_(name), age_(age), color_(color), heart_(heart) {}
+
 void Dog::isDogAwake() {
     if (this->heart_->heartBeat() == true) {
         std::cout << "Dog is awake\n";
