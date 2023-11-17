@@ -3,6 +3,8 @@
 
 Animal::Animal() : name_("DefaultAnimal"), age_(10), color_("Peach"), heart_(std::make_shared<Heart>()) {}
 
+Animal::Animal(const std::string& name, int age, const std::string& color, std::shared_ptr<Heart> heart) : name_(name), age_(age), color_(color), heart_(heart) {}
+
 void Animal::isAnimalAwake() {
     if (this->heart_->heartBeat() == true) {
         std::cout << "Animal is awake\n";
