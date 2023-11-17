@@ -6,6 +6,7 @@
 class Dog : public Animal {
  public:
     Dog();
+    Dog(const std::string& name, int age, const std::string& color, std::shared_ptr<Heart> heart);
     void isDogAwake();
     void wakeUpDog();
     void sleepDog();
