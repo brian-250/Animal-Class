@@ -5,6 +5,10 @@ Animal::Animal() : name_("DefaultAnimal"), age_(10), color_("Peach"), heart_(std
 
 Animal::Animal(const std::string& name, int age, const std::string& color, std::shared_ptr<Heart> heart) : name_(name), age_(age), color_(color), heart_(heart) {}
 
+std::string Animal::Name() {
+    return this->name_;
+}
+
 void Animal::isAnimalAwake() {
     if (this->heart_->heartBeat() == true) {
         std::cout << "Animal is awake\n";
