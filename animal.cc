@@ -13,6 +13,10 @@ int Animal::age() {
     return this->age_;
 }
 
+std::string Animal::color() {
+    return this->color_;
+}
+
 void Animal::isAnimalAwake() {
     if (this->heart_->heartBeat() == true) {
         std::cout << "Animal is awake\n";
